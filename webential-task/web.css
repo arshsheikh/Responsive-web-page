@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #fff;
+    padding: 34px 70px;
+    border-bottom: 1px solid #ddd;
+}
+
+.icon {
+    margin: 15 0;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 65%;
+    margin: 0 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 7px 30px;
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: large;
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar ul li:hover ul {
+    display: block;
+}
+
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: burlywood;
+    border: 1px solid #ddd;
+    z-index: 4;
+}
+
+.navbar ul ul li {
+    display: block;
+}
+
+.icon {
+    margin-left: 220px;
+
+}
+
+.btn-call {
+    background-color: red;
+    color: white;
+    top: 0;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    font-weight: 500;
+    color: #0A0A0A;
+    font-size: 20px;
+    line-height: 55px;
+    position: relative;
+    margin-left: 10em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-top: 3.5em;
+}
+
+.hero p {
+    font-size: 0.7em;
+    margin-top: 0.5em;
+}
+
+.search-container {
+    display: flex;
+    margin: 20px 0;
+}
+
+.search-container input,
+.search-container select {
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.btn-search {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 30px 30px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.bnr-img {
+    width: 46%;
+    float: right;
+    height: 100%;
+    margin-right: 84;
+    margin-bottom: 20px;
+}
+
+.imgMain {
+    position: relative;
+    text-align: center;
+}
+
+.absoImg {
+    position: absolute;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        width: 65%;
+    }
+
+    .hero {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .bnr-img {
+        width: 46%;
+        float: right;
+        margin-right: 4%;
+        margin-bottom: 20px;
+    }
+}
